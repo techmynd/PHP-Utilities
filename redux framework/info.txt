@@ -1,3 +1,18 @@
+in functions.php
+=================
+
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/theme-options/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/theme-options/ReduxCore/framework.php' );
+}
+if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/theme-options/options/config.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/theme-options/options/config.php' );
+}
+
+config.php
+==========
+$opt_name = "redux_options";
+
+
 //Global Options Call
 <?php global $redux_options; ?>
 //Global Options Call >> id >> the_id
@@ -36,3 +51,13 @@ if(count($redux_options['theme_slider'])) {
     }
 }
 ?>
+
+
+
+
+
+resources 
+=========
+https://www.youtube.com/watch?v=MfIHIm-q-V8
+
+

@@ -3,3 +3,36 @@
 //Global Options Call >> id >> the_id
 <?php if($redux_options['the_id']) { echo "$redux_options['the_id']"; } ?>
 
+// call gallery
+<?php 
+    // testing
+    var_dump ($redux_options['theme_slider']);
+    // first array dump
+    var_dump ($redux_options['theme_slider'][0]);
+?>
+
+// call gallery loop
+<?php
+if(count($redux_options['theme_slider'])) {
+    foreach($redux_options['theme_slider'] as $slider){
+        ?>
+            <img src="<?php echo $slider['image']; ?>">
+        <?php
+    }
+}
+?>
+
+// active check in loop with above code
+<?php
+if(count($redux_options['theme_slider'])) {
+    $i = 0;
+    foreach($redux_options['theme_slider'] as $slider){
+        ?>
+            <div class="<?php if($i == 0) { echo "active"; } ?>">
+                <img src="<?php echo $slider['image']; ?>">
+            </div>
+        <?php
+    $i++;
+    }
+}
+?>

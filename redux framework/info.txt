@@ -1,0 +1,5 @@
+//Global Options Call
+<?php global $redux_options; ?>
+//Global Options Call >> id >> the_id
+<?php if($redux_options['the_id']) { echo "$redux_options['the_id']"; } ?>
+

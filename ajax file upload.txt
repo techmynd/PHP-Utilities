@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/2320069/jquery-ajax-file-upload
+https://stackoverflow.com/questions/4006520/using-html5-file-uploads-with-ajax-and-jquery
+

@@ -1,0 +1,4 @@
+Usage
+Create database with users table or import the _resources/phploginapp.sql file
+Add DB config params to db.php
+Open index.php and register a user
